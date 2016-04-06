@@ -34,7 +34,7 @@ for ($fileira = 1; $fileira <= 6; $fileira++) {
         <br>
         <form method="POST" action="atuadores/seta_sala.php">
             <input type="hidden" name="editando" value="sim">
-            Sala nº <input type="number" class="selsala" min="203" max="312" value="203" name="sala"><br>
+            Sala nº <input type="number" class="selsala" min="203" max="312" value="<?php echo $salanum; ?>" name="sala"><br>
             <br>
             Anos: <table id="sala" style="display: inline-block;"></table><br>
             <br>
