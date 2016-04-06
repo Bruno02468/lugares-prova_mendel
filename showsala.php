@@ -24,7 +24,7 @@ if (isset($_GET["fileira"])) {
 
 function maketd($texto, $ano, $selec = false) {
     $class = "ano_$ano";
-    if ($texto == "") $class .= " empty";
+    if ($texto == "" || $texto === "º") $class .= " empty";
     if ($selec) $class .= " selec";
     return "<td class=\"$class\">$texto</td>";
 }
