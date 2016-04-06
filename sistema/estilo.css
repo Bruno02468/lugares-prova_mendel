@@ -1,0 +1,237 @@
+/* Tema base. */
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    background-color: #10110E;
+    overflow-x: hidden;
+    text-align: center;
+    width: auto;
+    display: table-cell;
+}
+
+hr {
+    color: #5FFF57;
+}
+
+a {
+    color: #5FFF57;
+}
+
+a:hover {
+    color: #3DFF33;
+}
+
+/* Entradas de texto. */
+input[type=text], input[type=number], input[type=password], input[type=date], textarea {
+    /*-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;*/
+    background: #2B2C29;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid #5FFF57;
+    border-radius: 2px;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=password]:focus, input[type=date]:focus, textarea:focus {
+    background: #40413E;
+    box-shadow: 0 0 7px #3DFF33;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid #3DFF33;
+}
+
+input[type=checkbox] {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+/* Botões. */
+button, input[type=button], input[type=submit] {
+    color: black;
+    background-color: #6f706e;
+    border: 2px solid black;
+    margin: 5px 5px;
+}
+
+/* Réplica da tag H2, para padronização. */
+.h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/* Tag [big] da formatação */
+.big {
+    font-size: 1.33em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+tt, code, kbd, samp {
+    font-family: monospace;
+}
+
+.buttonlink {
+    background: #00ed4f;
+    background-image: linear-gradient(to bottom, #00ed4f, #00a806);
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border-bottom: 10px;
+    line-height: 20px;
+}
+
+.buttonlink:hover {
+    background: #00ff51;
+    background-image: linear-gradient(to bottom, #00ff51, #0fb300);
+    text-decoration: none;
+    color: black;
+}
+
+.btnred {
+    background: #e80000;
+    background-image: linear-gradient(to bottom, #e80000, #940000);
+}
+
+.btnred:hover {
+    background: #ff0000;
+    background-image: linear-gradient(to bottom, #ff0000, #b00000);
+}
+
+.btnblue, .admvisao .buttonlink {
+    background: #00bceb;
+    background-image: linear-gradient(to bottom, #00bceb, #00799e);
+}
+
+.btnblue:hover, .admvisao .buttonlink:hover {
+    background: #00d0eb;
+    background-image: linear-gradient(to bottom, #00d0eb, #008da6);
+}
+
+.btnorange {
+    background: #ff8c12;
+    background-image: linear-gradient(to bottom, #ff8c12, #f76b00);
+}
+
+.btnorange:hover {
+    background: #ffa200;
+    background-image: linear-gradient(to bottom, #ffa200, #ff7700);
+}
+
+.smallbtn {
+    padding: 2px 8px 2px 8px;
+}
+
+.bigbtn {
+    font-size: 20px;
+    padding: 6px 15px 6px 15px;
+    line-height: 25px;
+}
+
+.seletra {
+    width: 2em;
+}
+
+.selano {
+    width: 2.5em;
+}
+
+.selnum {
+    width: 3em;
+}
+
+.selsala {
+    width: 4em;
+}
+
+.ano_1 {
+    color: rgb(240, 20, 20);
+}
+
+.ano_2 {
+    color: rgb(24, 95, 232);
+}
+
+.ano_3 {
+    color: rgb(68, 154, 0);
+}
+
+.lugares {
+    border-spacing: 15px;
+}
+
+.anosrow td {
+    font-size: 2.5em;
+    padding-right: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.linhalugar td {
+    text-align: center;
+    font-size: 1.6em;
+    padding: 5px;
+    border: 2px solid rgb(188, 255, 177);
+    border-radius: 10px;
+    font-family: monospace;
+
+}
+
+.porta {
+    visibility: visible;
+    height: 0;
+    width: 0;
+    white-space: nowrap;
+    position: relative;
+    right: 6em;
+    font-weight: bolder;
+    color: rgb(43, 191, 246);
+    text-decoration: underline;
+}
+
+#salanome {
+    font-size: 3.5em;
+}
+
+.upper {
+    bottom: 2em;
+}
+
+.lower {
+    top: 2em;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.errou {
+    color: rgb(241, 25, 25);
+    font-size: 90%;
+}
+
+.selec {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 125%;
+    background-color: #ffffff;
+    border: 5px solid rgb(255, 138, 0) !important;
+}
+
+* {
+    color: #D1FFD6;
+    font-family: 'Open Sans', sans-serif;
+}

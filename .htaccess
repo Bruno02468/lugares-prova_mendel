@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule sala/(.*)_(.*)-(.*) showsala.php?sala=$1&fileira=$2&ideal=$3
+RewriteRule sala/(.*) showsala.php?sala=$1
