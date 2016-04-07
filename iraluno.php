@@ -7,8 +7,13 @@ if (!isset($_POST["ano"]) || !isset($_POST["letra"]) || !isset($_POST["numero"])
 }
 
 $ano = req_post("ano");
-$letra = req_post("letra");
+$letra = strtoupper(req_post("letra"));
 $numero = req_post("numero");
+
+if (empty($ano) || empty($letra) || empty($numero)) {
+    error_log("empty");
+    redir("./?errou");
+}
 
 if (strlen($numero) == 1) $numero = "0$numero";
 

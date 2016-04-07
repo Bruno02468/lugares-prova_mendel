@@ -146,7 +146,7 @@ tt, code, kbd, samp {
 }
 
 .selano {
-    width: 2.5em;
+    width: 2.8em;
 }
 
 .selnum {
@@ -200,10 +200,6 @@ tt, code, kbd, samp {
     font-weight: bolder;
     color: rgb(43, 191, 246);
     text-decoration: underline;
-}
-
-#salanome {
-    font-size: 3.5em;
 }
 
 .upper {
