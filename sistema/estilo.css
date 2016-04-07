@@ -231,6 +231,16 @@ tt, code, kbd, samp {
     border: 5px solid rgb(255, 138, 0) !important;
 }
 
+.lousa {
+    color: white;
+    font-size: 2em;
+    display: inline-block;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(84, 84, 84)
+}
+
 * {
     color: #D1FFD6;
     font-family: 'Open Sans', sans-serif;

@@ -26,7 +26,7 @@ function maketd($texto, $ano, $selec = false) {
     $class = "ano_$ano";
     if ($texto == "" || $texto === "º") $class .= " empty";
     if ($selec) $class .= " selec";
-    return "<td class=\"$class\">$texto</td>";
+    return "<td class=\"$class\" align=\"center\">$texto</td>";
 }
 $tabela = "<tr class=\"anosrow\">";
 
@@ -62,6 +62,8 @@ for ($linha = 1; $linha <= 8; $linha++) {
     $tabela .= "</tr>";
 }
 
+//$tabela .= "<tr class=\"lousa\"><td align=\"center\">LOUSA</td></tr>";
+
 ?>
 
 <html>
@@ -80,6 +82,7 @@ for ($linha = 1; $linha <= 8; $linha++) {
         <a class="buttonlink" href="../">Pesquisar outras salas</a><br>
         <table class="lugares" style="display: inline-block;">
             <?php echo $tabela; ?>
-        </table>
+        </table><br>
+        <center class="lousa">L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;A</center>
     </body>
 </html>
