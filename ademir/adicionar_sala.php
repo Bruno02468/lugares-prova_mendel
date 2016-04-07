@@ -18,7 +18,7 @@ require_login();
         <br>
         <br>
         <form method="POST" action="atuadores/seta_sala.php">
-            Sala nº <input type="number" class="selsala" min="203" max="312" value="203" name="sala"><br>
+            Sala nº <input type="number" class="selsala" min="203" max="312" value="" name="sala"><br>
             <br>
             Anos: <table id="sala" style="display: inline-block;"></table><br>
             <br>
