@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     </head>
     <body>
+        <?php include_once("sistema/analytics.php") ?>
         <h1>Lugares de Prova</h1>
         <a class="buttonlink btnorange" href="//licoes.com/licao">Lições</a><br>
         <br>

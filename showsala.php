@@ -62,8 +62,6 @@ for ($linha = 1; $linha <= 8; $linha++) {
     $tabela .= "</tr>";
 }
 
-//$tabela .= "<tr class=\"lousa\"><td align=\"center\">LOUSA</td></tr>";
-
 ?>
 
 <html>
@@ -76,6 +74,7 @@ for ($linha = 1; $linha <= 8; $linha++) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     </head>
     <body>
+        <?php include_once("sistema/analytics.php") ?>
         <h1>Sala de Prova nº <?php echo $salaid; ?></h1>
         Mais uma criação maluca do <a target="_blank" href="//licoes.com/licao/contato.html">Borginhos</a> (2º F)<br>
         <br>
