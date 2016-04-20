@@ -192,22 +192,19 @@ tt, code, kbd, samp {
 
 .porta {
     visibility: visible;
-    height: 0;
-    width: 0;
     white-space: nowrap;
     position: relative;
-    right: 6em;
+    bottom: 0.5em;
+    height: 0;
     font-weight: bolder;
     color: rgb(43, 191, 246);
     text-decoration: underline;
 }
 
 .upper {
-    bottom: 2em;
 }
 
 .lower {
-    top: 2em;
 }
 
 .empty {

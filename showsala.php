@@ -31,7 +31,8 @@ function maketd($texto, $ano, $selec = false) {
     if ($selec) $class .= " selec";
     return "<td class=\"$class\" align=\"center\">$texto</td>";
 }
-$tabela = "<tr class=\"anosrow\">";
+
+$tabela = "<tr class=\"anosrow\"><td></td>";
 
 for ($fileira = 1; $fileira <= 6; $fileira++) {
     $ano = $salarr["anos"][$fileira-1];
@@ -49,7 +50,7 @@ for ($linha = 1; $linha <= 8; $linha++) {
 }
 
 for ($linha = 1; $linha <= 8; $linha++) {
-    $tabela .= "<tr class=\"linhalugar\">";
+    $tabela .= "<tr class=\"linhalugar\"><td class=\"empty\">";
     for ($fileira = 1; $fileira <= 6; $fileira++) {
         $pessoa = $salarr["fileiras"][$fileira-1][$linha-1];
         $selec = ($pessoa === $alunoideal && $fileira == $fileiraideal);
@@ -57,10 +58,10 @@ for ($linha = 1; $linha <= 8; $linha++) {
         if (($linha == 1 && $portacima) || ($linha == $ultimoesq && !$portacima)) {
             if ($fileira == 1) {
                 $class = $portacima ? "upper" : "lower";
-                $pessoa = "<div class=\"porta $class\">PORTA ➡</div>$pessoa";
+                $tabela .= "<div class=\"porta $class\">PORTA ➡</div>";
             }
         }
-        $tabela .= maketd($pessoa, $ano, $selec);
+        $tabela .= "</td>" . maketd($pessoa, $ano, $selec);
     }
     $tabela .= "</tr>";
 }
@@ -85,7 +86,7 @@ for ($linha = 1; $linha <= 8; $linha++) {
         <table class="lugares" style="display: inline-block;">
             <?php echo $tabela; ?>
         </table><br>
-        <center class="lousa">L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;A</center>
+        <!--<center class="lousa">L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;A</center>-->
         <script>
             if (localStorage) {
                 <?php echo $js; ?>
