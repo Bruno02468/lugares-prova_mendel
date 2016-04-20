@@ -26,14 +26,14 @@
             ?>
             <br>
             <form action="iraluno.php" method="POST">
-                Sua sala: <input class="selano" type="number" min="1" max="3" value="" name="ano">º
-                <input type="text" name="letra" class="seletra" value=""><br>
-                Seu número: <input class="selnum" type="number" min="1" max="40" value="" name="numero"><br>
+                Sua sala: <input class="selano" type="number" min="1" max="3" value="" id="ano" name="ano">º
+                <input type="text" name="letra" class="seletra" id="letra" autocomplete="off" value=""><br>
+                Seu número: <input class="selnum" id="numero" type="number" min="1" max="40" value="" name="numero"><br>
                 <input type="submit" class="buttonlink" value="Só vai">
             </form>
             Já sabe a sua sala?<br>
             <form onsubmit="return vaisala();">
-                Sala: <input type="number" class="selsala" min="203" max="312" value="" name="sala" id="sala"><br>
+                Sala: <input type="number" class="selsala" autocomplete="off" min="203" max="312" value="" name="sala" id="sala"><br>
                 <input type="submit" class="buttonlink" value="Só vai">
             </form>
         </big></big>
@@ -41,6 +41,18 @@
             function vaisala() {
                 location.href = "sala/" + document.getElementById("sala").value;
                 return false;
+            }
+            if (localStorage) {
+                if (localStorage["sala"].length == 2) {
+                    document.getElementById("ano").value = localStorage["sala"][0];
+                    document.getElementById("letra").value = localStorage["sala"][1];
+                }
+                if (localStorage["numero"]) {
+                    document.getElementById("numero").value = localStorage["numero"];
+                }
+                if (localStorage["salaprova"]) {
+                    document.getElementById("sala").value = localStorage["salaprova"];
+                }
             }
         </script>
     </body>

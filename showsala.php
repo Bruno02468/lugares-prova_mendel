@@ -12,9 +12,12 @@ if (!salaExists($salaid)) {
 }
 $salarr = getSala($salaid);
 
+$js = "";
 $alunoideal = null;
 if (isset($_GET["ideal"])) {
     $alunoideal = $_GET["ideal"];
+    $js = "localStorage[\"numero\"] = " . $alunoideal[0] . $alunoideal[1] . ";
+        localStorage[\"salaprova\"] = " . $salaid . ";";
 }
 
 $fileiraideal = null;
@@ -83,5 +86,10 @@ for ($linha = 1; $linha <= 8; $linha++) {
             <?php echo $tabela; ?>
         </table><br>
         <center class="lousa">L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;A</center>
+        <script>
+            if (localStorage) {
+                <?php echo $js; ?>
+            }
+        </script>
     </body>
 </html>
